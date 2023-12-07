@@ -1,0 +1,14 @@
+p {
+  color: #f597a9;
+  border-bottom: 1px solid white;
+  line-height: normal;
+}
+
+p:hover {
+  color: #ffc501;
+  cursor: pointer;
+}
+
+.iteration-text {
+  padding-left: 2%;
+}

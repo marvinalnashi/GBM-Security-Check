@@ -1,0 +1,16 @@
+<div *ngIf="loggedIn" class="alert alert-success container marge">
+    {{ loggedIn }}
+</div>
+
+<div *ngIf="!auth.isAuthenticated()">
+  <p class="container">You are not logged in</p>
+</div>
+
+<div *ngIf="auth.isAuthenticated()">
+  <p class="container">You are logged in as {{ auth.getUsername() }}</p>
+</div>
+
+<!--<div *ngIf="loggedIn">-->
+<!--  <p class="container">You are logged in as {{ auth.getUsername() }}</p>-->
+<!--</div>-->
+

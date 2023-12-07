@@ -1,0 +1,22 @@
+<div class="flex-blacklist-container">
+  <div class="flex-blacklist-child">
+    <h2 class="blacklist-title-text">Banned IP addresses</h2>
+    <div>
+      <button class="img-size" type="submit"><img src="assets/plussign.png" alt=""></button>
+    </div>
+      <app-ip-items
+      *ngFor="let ip of IPBlackList"
+      [IPAddresses] = ip
+    ></app-ip-items>
+  </div>
+  <div class="flex-blacklist-child">
+    <h2 class="blacklist-title-text">Banned hostnames</h2>
+    <div>
+      <button class="img-size" type="submit"><img src="assets/plussign.png" alt=""></button>
+    </div>
+    <app-url-items
+      *ngFor="let hostname of HostnameBlacklist"
+      [Hostnames] = hostname
+    ></app-url-items>
+  </div>
+</div>

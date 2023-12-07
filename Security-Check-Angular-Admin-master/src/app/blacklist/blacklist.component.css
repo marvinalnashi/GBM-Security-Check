@@ -1,0 +1,33 @@
+.img-size img {
+  width: 30px;
+  height: 30px;
+}
+
+.flex-blacklist-container {
+  display: flex;
+}
+
+.flex-blacklist-child {
+  flex: 1;
+  background-color: #1E1E20;
+  color: #FFFFFF;
+  border-radius: 3%;
+}
+
+.flex-blacklist-child:first-child {
+  margin-right: 20px;
+}
+
+/*.blacklist-titles {*/
+/*  border: 2px #1e88e5;*/
+/*  border-radius: 5%;*/
+/*  !*-moz-border-radius-topleft: 5%;*!*/
+/*  !*-moz-border-radius-topright: 5%;*!*/
+/*  background-color: #FFFFFF;*/
+/*  color: #000000;*/
+/*}*/
+
+.blacklist-title-text {
+  padding-left: 2%;
+  text-decoration: underline overline;
+}
